@@ -17,7 +17,7 @@ def main():
             try:
                 site = input('Type the name of the site the password is being made for: ')
                 number_characters = int(input('Type a number, this will be the len of your password: '))
-                new_password = pm.generate_password(number_characters)
+                new_password = pm.generate_password2(number_characters)
                 pm.add_newPassword(site, new_password)
                 print('This is your new password: '+new_password)
             except:
