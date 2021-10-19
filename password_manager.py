@@ -33,7 +33,8 @@ def generate_password2(number_character):
         if password != 0:
             password[i] = select_random_character(characters)
     password = ''.join(password)
-    print(password)
+    return password
+    #print(password)
 
 # for i in range(25):
 #     generate_password2(10)        
