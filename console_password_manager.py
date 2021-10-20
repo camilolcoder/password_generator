@@ -25,7 +25,7 @@ def main():
                 print('Please type a valid number')
         elif option == '2':
             domain = input('Type the domain of the password your are looking for: ')
-            pm.find_password()
+            pm.find_password(domain)
         elif option == '3':
             pm.show_passwords()
         else:

@@ -49,13 +49,16 @@ def add_newPassword(password_location,password):
     file.write(password_location+','+password+'\n')
     file.close()
 
-def show_passwords():
+def get_df():
     df = pd.read_csv('passwords.txt', sep=',', header=None)
     df.columns = ['Domains', 'Passwords']
+    return df
+
+def show_passwords():
+    df = get_df()
     print(df)
-    # file = open('passwords.txt', 'r')
-    # content = file.read()
-    # return print(content)
 
 def find_password(domain):
-    print('Working on this option')
+    df = get_df()
+    df = df[df.Domains == domain]
+    print(df)
