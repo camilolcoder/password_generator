@@ -1,6 +1,6 @@
 # Passwords manager (Beta)
 
-## The purposeo of the repository
+## The purpose of the repository
 
 This is supposed to help you create and manage **strong** passwords
 
