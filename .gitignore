@@ -26,7 +26,7 @@ var/
 *.egg
 
 #Password manager
-passwords.txt/
+passwords.txt
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
