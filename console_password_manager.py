@@ -7,6 +7,7 @@ def printMenu():
     print('2. Search a password')
     print('3. Show all the passwords')
     print('4. Exit program')
+    print('')
 
 def main():
     while True:
@@ -23,7 +24,8 @@ def main():
             except:
                 print('Please type a valid number')
         elif option == '2':
-            print('Working on it')
+            domain = input('Type the domain of the password your are looking for: ')
+            pm.find_password()
         elif option == '3':
             pm.show_passwords()
         else:

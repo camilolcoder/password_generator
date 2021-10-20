@@ -1,4 +1,6 @@
+import os
 import random
+import pandas as pd
 
 characters = 'q w e r t y u i o p a s d f g h j k l z x c v b n m Q W E R T Y U I O P A S D F G H J K L Z X C V B N M ! @ # $ % & / ( ) = ? 0 1 2 3 4 5 6 7 8 9'
 
@@ -34,17 +36,26 @@ def generate_password2(number_character):
             password[i] = select_random_character(characters)
     password = ''.join(password)
     return password
-    #print(password)
-
-# for i in range(25):
-#     generate_password2(10)        
         
+def check_file():
+    check = os.path.exists('./passwords.txt')
+    return check        
+#print(check_file())
+
 def add_newPassword(password_location,password):
     file = open('passwords.txt', 'a')
+    # if not check_file():
+    #     file.write('domain, '+'password'+'\n')
     file.write(password_location+','+password+'\n')
     file.close()
 
 def show_passwords():
-    file = open('passwords.txt', 'r')
-    content = file.read()
-    return print(content)
+    df = pd.read_csv('passwords.txt', sep=',', header=None)
+    df.columns = ['Domains', 'Passwords']
+    print(df)
+    # file = open('passwords.txt', 'r')
+    # content = file.read()
+    # return print(content)
+
+def find_password(domain):
+    print('Working on this option')
