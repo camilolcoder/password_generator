@@ -15,4 +15,4 @@ pip install -r requirements.txt
 ```
 ## How to use it
 
-![Screenshot](documentation_imgs/project_documentation.PNG)
+![Screenshot](documentation_imgs/project_documentations.PNG)
