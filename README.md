@@ -15,4 +15,4 @@ pip install -r requirements.txt
 ```
 ## How to use it
 
-![Screenshot](documentation_imgs/project_documentations.PNG)
+![Alt text](documentation_imgs/project_documentations.PNG? raw=true "Title")
