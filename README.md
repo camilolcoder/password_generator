@@ -15,4 +15,9 @@ pip install -r requirements.txt
 ```
 ## How to use it
 
-![Alt text](documentation_imgs/project_documentations.PNG? raw=true "Title")
+Once you run it the program only has 4 options:\
+
+- 1. Generates a new password
+- 2. You can search for a password givin as input the name of the domain the password is for
+- 3. Show all the passwords
+- 4. Exit program
