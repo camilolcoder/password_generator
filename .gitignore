@@ -25,6 +25,8 @@ var/
 .installed.cfg
 *.egg
 
+documentation_imgs/
+
 #Password manager
 passwords.txt
 

@@ -4,7 +4,7 @@
 
 This is supposed to help you create and manage **strong** passwords
 
-## Instalation
+## Installation
 
 ```
 git clone https://github.com/camilolcoder/password_generator.git
@@ -13,3 +13,6 @@ git clone https://github.com/camilolcoder/password_generator.git
 ```
 pip install -r requirements.txt  
 ```
+## How to use it
+
+![Screenshot](documentation_imgs/project_documentation.PNG)
